@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+.input-border {
+  @apply border-solid border border-gray-400 rounded;
+}
+.input-error {
+  @apply border-red-500;
+}
+.RlBMJ {
+  @apply inline-block align-middle cursor-pointer;
+}
+.ctxvUT {
+  border: 0px;
+  clip: rect(0px, 0px, 0px, 0px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.checkbox-not-active {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 1px;
+  transition: all 150ms ease 0s;
+  box-shadow: rgb(63 155 183) 0px 0px 0px 3px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.checkbox-not-active .visible {
+  visibility: hidden;
+}
+.svg-checkbox {
+  fill: none;
+  stroke: rgb(50, 123, 145);
+  stroke-width: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.apply-btn {
+  background: rgb(241, 109, 55);
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+.radio-active .visible {
+  visibility: visible;
 }
 
-.App-link {
-  color: #61dafb;
+.radio-active {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  transition: all 150ms ease 0s;
+  box-shadow: rgb(241 109 55) 0px 0px 0px 2px;
+  background: rgb(241, 109, 55);
+}
+.radio-not-active {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  transition: all 150ms ease 0s;
+  box-shadow: grey 0px 0px 0px 1px;
+  background: white;
+}
+.svg-radio {
+  fill: none;
+  stroke: white;
+  stroke-width: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.radio-input {
+  border: 0px;
+  clip: rect(0px, 0px, 0px, 0px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.pointer {
+  @apply inline-block align-middle cursor-pointer;
+}
+
+.radio-not-active .visible {
+  visibility: hidden;
+}
+
+.checkbox-active {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 1px;
+  transition: all 150ms ease 0s;
+  box-shadow: rgb(63 155 183) 0px 0px 0px 3px;
 }
